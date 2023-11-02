@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/ortalyarts/frontendmentor-order-summary-component)
-- Live Site URL: [Add live site URL here](https://frontendmentor-order-summary-component-j2s6c8gkf.vercel.app/)
+- Live Site URL: [Add live site URL here](https://frontendmentor-order-summary-component-ecru.vercel.app/)
 
 ## My process
 
