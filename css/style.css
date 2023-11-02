@@ -1,0 +1,165 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul {
+  margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  /* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* General STYLE */
+:root {
+    --accent: hsl(223, 47%, 23%);
+    --bright: hsl(245, 75%, 52%);
+    --maincolor: hsl(224, 23%, 55%);
+    --sansserif: 'Red Hat Display', sans-serif;
+    --weightnormal: 500;
+    --weightsemi: 700;
+    --weightbold: 900;
+}
+body {
+    padding:0em;
+    font-family: var(--sansserif);
+    text-rendering: optimizeSpeed;
+    text-align:left; 
+    background:hsl(225, 100%, 94%);
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    /* to stick the footer to the bottom */
+    min-height: 100vh; 
+    display:flex; flex-direction:column; 
+}
+h1, h2, h3, ul {
+    padding:0;
+}
+h1 {
+    font-size:1.5rem;
+    line-height:1.5rem;
+    font-weight: var(--weightbold);
+    text-align:center;
+    color:var(--accent);
+    margin-bottom: 1.4rem;
+}
+h2 {
+  font-size:0.9rem;
+  line-height:1.5rem;
+  font-weight:var(--weightsemi);
+  color:var(--accent);
+}
+p {
+    font-size:1rem;
+    line-height:1.5rem;
+    text-align:center;
+    font-weight: var(--weightnormal);
+    color:var(--maincolor);
+    padding:0;
+}
+main {
+    background:white;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 1.7rem 0.6rem #c6cff6;
+    overflow:hidden;
+    max-width: 20.438rem;
+    margin:auto;
+}
+main img {
+  width:100%;
+}
+.summary {
+  padding:1.563rem;
+}
+.price {
+  display:grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap:1rem;
+  background:hsl(225, 100%, 98%);
+  padding:1rem;
+  margin-inline-start: auto;
+  margin:1.5rem 0 2rem 0;
+  border-radius: 0.7rem;
+}
+.price p {
+  text-align:left;
+  font-size:0.9rem;
+}
+.price img {
+  width:3rem;
+}
+button {
+  font-family: inherit;
+  font-weight:var(--weightsemi);
+  border: none;
+	cursor: pointer;
+	outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition:background 0.2s;
+    -webkit-transition:background 0.2s;
+}
+button.change {
+  background:none;
+  text-decoration:underline;
+  color: var(--bright);
+  font-size:0.875rem;
+}
+button.proceed {
+  width:100%;
+  background:var(--bright);
+  font-size:0.875rem;
+  line-height:1.5rem;
+  letter-spacing:0.01rem;
+  color: white;
+  border-radius: 0.7rem;
+  padding:0.8rem ;
+  box-shadow: 0 0.8rem 1.5rem 0.3rem #d7d6f6;
+}
+button.proceed:hover {
+  background:#766cf1;
+}
+button.cancel {
+  width:100%;
+  margin-top:1.875rem;
+  color:var(--maincolor);
+  font-size:0.875rem;
+  font-weight:var(--weightsemi);
+  background:none;
+}
+button.cancel:hover {
+  color:var(--accent);
+}
+button.change:hover {
+  text-decoration:none;
+  color:#766cf1;
+}
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:40rem){
+  main {max-width: 28.125rem;}
+  .summary {
+    padding:3rem;
+  }
+  h1 {
+    font-size:1.8rem;
+    line-height:1.8rem;
+  }
+  .price { 
+    padding:1.5rem;
+    gap:1.5rem;
+  }
+  .price p, .price h2 {
+    font-size:1rem;
+  }
+}
